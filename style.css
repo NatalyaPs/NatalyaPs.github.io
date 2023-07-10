@@ -1086,6 +1086,7 @@ summary::-webkit-details-marker {
   display: flex;
   flex-direction: column;
   gap: 57px;
+  padding-top: 113px;
 }
 
 .cart-prods {
@@ -1226,9 +1227,7 @@ summary::-webkit-details-marker {
 }
 
 .address {
-  margin-top: 113px;
   width: 360px;
-  height: 272px;
   padding: 0;
   box-sizing: border-box;
   display: flex;
@@ -1246,7 +1245,6 @@ summary::-webkit-details-marker {
 }
 .address__input {
   width: 360px;
-  height: 175px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1262,7 +1260,7 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: normal;
 }
-.address__item_town {
+.address__item_color {
   color: #B1B1B1;
 }
 
@@ -1329,6 +1327,95 @@ summary::-webkit-details-marker {
 .checkout__button:hover {
   color: #F16D7F;
   background-color: #fff;
+}
+
+.registration {
+  display: flex;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  box-sizing: border-box;
+  background: #FFF;
+}
+.registration__left {
+  width: 360px;
+  box-sizing: border-box;
+}
+.registration__right {
+  width: 652px;
+  height: 334px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__text {
+  padding-top: 15px;
+  padding-bottom: 39px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__button {
+  width: 167px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #F16D7F;
+  background-color: #F16D7F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.4s;
+}
+.registration__button:hover {
+  color: #F16D7F;
+  background-color: #fff;
+}
+.registration__button:hover .registration__svg path {
+  fill: #F16D7F;
+}
+.registration__gender {
+  width: 132px;
+  height: 17px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 31px;
+  margin-bottom: 33px;
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__gender_inp {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: flex-end;
+}
+.registration__benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration__benef::before {
+  content: url(img/reg.svg);
+  padding-right: 22px;
 }
 
 @media (max-width: 1024px) {
@@ -1532,7 +1619,4 @@ summary::-webkit-details-marker {
   .copyright__text {
     padding-left: 0;
   }
-}
-.prod_bekgr {
-  background-color: #F7E4E2;
 }/*# sourceMappingURL=style.css.map */
