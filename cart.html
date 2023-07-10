@@ -16,74 +16,61 @@
     <!-- делаем общий блок для всех блоков, что б прикрепить выпадающее меню сайта - бургер-меню -->
     <div class="box-content">
         <header class="heading center">
-            <nav class="heading_left">
-                <a href="index.html"><img src="img/logo_main.svg" width="44" alt="logo"></a>
-                <a href="#"><img src="img/logo_search.svg" width="26" alt="search"></a>
+            <nav class="heading__left">
+                <a class="heading__left_a-img" href="index.html"><img class="heading__left_img-hover" src="img/logo_main.svg" width="44" alt="logo"></a>
+                <a class="heading__left_a-img" href="#"><img class="heading__left_img-hover" src="img/logo_search.svg" width="26" alt="search"></a>
             </nav>
-            <nav class="heading_rigth">
+            <nav class="heading__rigth">
                 <div class="burger-menu-icon">
+                    <input id="burger" type="checkbox" checked hidden>
                     <label for="burger">
-                        <a href="#" class="activ-mobile-menu">
-                            <img src="img/logo_nav.svg" width="32" alt="burger-menu">
-                        </a>
+                        <img class="img-hover" src="img/logo_nav.svg" width="32" alt="burger-menu">
                     </label>
-                    <input class="burger" type="checkbox">
+                    <nav class="nav-burger">
+                        <h3 class="nav-burger__tytle">MENU</h3>
+                        <div class="nav-burger__box">
+                            <ul>
+                                <li class="nav-burger__subject"><a href="catalog.html"></a>MAN
+                                    <ul>
+                                        <li class="nav-burger__link"><a href="#"></a>Accessories</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Bags</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Denim</li>
+                                        <li class="nav-burger__link"><a href="#"></a>T-Shitrs</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-burger__subject"><a href="catalog.html"></a>WOMEN
+                                    <ul>
+                                        <li class="nav-burger__link"><a href="#"></a>Accessories</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Jackets & Coats</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Polos</li>
+                                        <li class="nav-burger__link"><a href="#"></a>T-Shirts</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Shirts</li>
+                                    </ul>
+                                </li>
+                                <li class="nav-burger__subject"><a href="catalog.html"></a>KIDS
+                                    <ul>
+                                        <li class="nav-burger__link"><a href="#"></a>Accessories</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Jackets & Coats</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Polos</li>
+                                        <li class="nav-burger__link"><a href="#"></a>T-Shirts</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Shirts</li>
+                                        <li class="nav-burger__link"><a href="#"></a>Bags</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </nav>
                     
                 </div>
-                
 
+                <a class="no-mobile heading__rigth_a-img" href="#"><img class="heading__rigth_img-hover" src="img/logo_account.svg" width="29" height="29"></a>
 
-
-
-
-
-
-                <!-- переделали на лекции №2. Можно использовать тег details - как в выпадающих меню размеров, но здесь для примера второй вариант -->
-                <!-- <div class="heading_mobile-menu">
-                    <a class="activ-mobile-menu" href="#"><img src="img/logo_nav.svg" width="32" alt="menu">
-                        <div class="mobile-menu">
-                            <h3 class="mobile-menu__tytle">MENU</h3>
-                            <div class="mobile-menu__box">
-                                <div class="mobile-menu__subtitle">
-                                    <a class="mobile-menu__subject" href="#" >MAN
-                                        <ul class="mobile-menu__list">
-                                            <li><a href="#" class="mobile-menu__link">Accessories</a></li>
-                                            <li><a href="#" class="mobile-menu__link">Bags</a></li>
-                                            <li><a href="#" class="mobile-menu__link">Denim</a></li>
-                                            <li><a href="#" class="mobile-menu__link">T-Shitrs</a></li>   
-                                        </ul>
-                                    </a>
-                                </div>
-                                <div class="mobile-menu__subtitle">
-                                    <a href="#" class="mobile-menu__subject">WOMEN</a>
-                                    <ul class="mobile-menu__list">
-                                        <li><a href="#" class="mobile-menu__link">Accessories</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Jackets & Coats</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Polos</a></li>
-                                        <li><a href="#" class="mobile-menu__link">T-Shitrs</a></li>   
-                                        <li><a href="#" class="mobile-menu__link">Shitrs</a></li>   
-                                    </ul>
-                                </div>
-                                <div class="mobile-menu__subtitle">
-                                    <a href="#" class="mobile-menu__subject">KIDS</a>
-                                    <ul class="mobile-menu__list">
-                                        <li><a href="#" class="mobile-menu__link">Accessories</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Jackets & Coats</a></li>
-                                        <li><a href="#" class="mobile-menu__link">Polos</a></li>
-                                        <li><a href="#" class="mobile-menu__link">T-Shitrs</a></li>   
-                                        <li><a href="#" class="mobile-menu__link">Shitrs</a></li>   
-                                        <li><a href="#" class="mobile-menu__link">Bags</a></li>   
-                                    </ul>
-                                </div>
-                            </div>  
-                        </div>
-                    </a>
-                </div> -->
-                
-                <a class="no-mobile" href="#"><img src="img/logo_account.svg" width="29" height="29"></a>
-                <a class="no-mobile" href="#"><img src="img/logo_basket.svg" width="32" height="29"></a>
+                <a class="no-mobile heading__rigth_a-img" href="cart.html"><img class="heading__rigth_img-hover" src="img/logo_basket.svg" width="32" height="29"></a>
             </nav>
+            
         </header>
+
         <section class="top-cart center">
             <div class="top-cart__title">SHOPPING CART</div>
         </section>
@@ -145,39 +132,72 @@
                 </div>
             </div>
             <div class="content-cart__address">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic enim dignissimos apolore eos nesciunt dolorum, fugit fugiat, modi delectus voluptatem in. Nesciunt explicabo voluptas non, fuga veritatis qui.</p>
+                <div class="address">
+                    <h3 class="address__heading">SHIPPING ADRESS</h3>
+                    <div class="address__input">
+                        <input class="address__item address__item_town" type="text" placeholder="Bangladesh">
+                        <input class="address__item" type="text" placeholder="State">
+                        <input class="address__item" type="text" placeholder="Postcode / Zip">
+                    </div>
+                    <button class="cart-btn cart-btn__address" type="submit">GET A QUOTE</button>
+                </div>
+                <div class="checkout">
+                    <div class="checkout__total">
+                        <div class="checkout__flex">
+                            <p class="checkout__text1">SUB TOTAL</p>
+                            <p class="checkout__sum1">$900</p>
+                        </div>
+                        <div class="checkout__flex">
+                            <p class="checkout__text2">GRAND TOTAL</p>
+                            <p class="checkout__sum2">$900</p>
+                        </div>
+                    </div>
+                    <div class="checkout__proceed">
+                        <button class="checkout__button" type="submit">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
             </div>
     
+            <!-- <div class="cart-product__flex">
+                <p class="cart-product__text">Price:</p>
+                <span class="cart-product__text cart-product__text_price">$300</span>
+            </div> -->
+
+
+
+
+
         </section>
+
         <footer>
             <section class="advantages center">
                 <article class="advantages__item">
                     <img width="45" src="img/advant1.svg" alt="image advantages" class="advantages__img">
                     <h3 class="advantages__title">Free Delivery</h3>
-                    <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </article>
                 <article class="advantages__item">
                     <img width="40" src="img/advant2.svg" alt="image advantages" class="advantages__img">
                     <h3 class="advantages__title">Sales & discounts</h3>
-                    <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </article>
                 <article class="advantages__item">
                     <img width="47" src="img/advant3.svg" alt="image advantages" class="advantages__img">
                     <h3 class="advantages__title">Quality assurance</h3>
-                    <p class="advantage__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    <p class="advantages__text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </article>
             </section>
     
-            <div class="subscription_background">
+            <div class="subscription-background">
                 <section class="subscription center">
                     <figure class="figure">
                         <img width="96" src="img/Intersect.png" alt="photo">
-                        <figcaption class="fig_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</figcaption>
+                        <figcaption class="figure__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</figcaption>
                     </figure>
                     <div class="subscribe">
                         <div class="subscribe__title">
-                            <h3 class="subscribe__title__main" >SUBSCRIBE</h3>
-                            <h4 class="subscribe__title__subtitle" >FOR OUR NEWLETTER AND PROMOTION</h4>
+                            <h3 class="subscribe__main" >SUBSCRIBE</h3>
+                            <h4 class="subscribe__subtitle" >FOR OUR NEWLETTER AND PROMOTION</h4>
                         </div>
                         <form class="subscribe__button">
                             <input class="subscribe__email" type="email" placeholder="Enter Your Email">
@@ -187,13 +207,12 @@
                 </section>
             </div>
             
-    
             <section class="social-network center">
                 <div class="copyright">
                     <p class="copyright__text">© 2022  Brand  All Rights Reserved.</p>
                 </div>
                 <div class="social-network__icons">
-                    <a href="#" class="icon">
+                    <!-- <a href="#" class="icon">
                         <svg class="icon__img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M31.4506 0H0V32H31.4506V0Z" fill="white" class="icon_bg"/>
                             <path d="M19.0884 16.28L19.5069 13.616H16.8902V11.8873C16.8902 11.1585 17.2557 10.4481 18.4277 10.4481H19.6172V8.17997C19.6172 8.17997 18.5377 8 17.5056 8C15.3507 8 13.9422 9.27593 13.9422 11.5857V13.616H11.5469V16.28H13.9422V22.72H16.8902V16.28H19.0884Z" fill="black" class="icon_fig"/>
@@ -211,7 +230,7 @@
                             </clipPath>
                             </defs>
                             </svg>
-                    </a>
+                    </a> -->
                     <a href="#" class="icon">
                         <svg class="icon__img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M31.9259 0H0.475342V32H31.9259V0Z" fill="white" class="icon_bg"/>
