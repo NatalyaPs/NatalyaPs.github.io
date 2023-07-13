@@ -771,7 +771,7 @@ li {
 
 // --------------------------
 // продвинутый. ДЗ 1   -  ниже
-// созданиt страницы товара каталога
+// созданиt страницы товара продукта
 .top-head {
     background: #f8f3f4;
     padding-top: 60px;
@@ -1110,7 +1110,6 @@ summary::-webkit-details-marker {
     }
 }
 
-
 .sort {
     height: 46px;  // 17
     width: 360px;
@@ -1185,7 +1184,7 @@ summary::-webkit-details-marker {
     }
 }
 
-.catalog__products {
+.catalog-products {
     &__box {
         background-color: #FFFFFF;
         display: grid;
@@ -1202,7 +1201,7 @@ summary::-webkit-details-marker {
         box-sizing: border-box;
         display: flex;
         justify-content: center;
-        &__link {
+        &-link {
             color: #6F6E6E;
             font-size: 16px;
             font-family: Lato;
@@ -1210,7 +1209,7 @@ summary::-webkit-details-marker {
             font-weight: 300;
             line-height: normal;
         }
-        &__link:hover {
+        &-link:hover {
             color: $colorSelectSite;
         }
     }
@@ -1247,6 +1246,7 @@ summary::-webkit-details-marker {
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        padding-left: 16px;
     }
 }
 
@@ -1569,12 +1569,14 @@ summary::-webkit-details-marker {
     &__left {
         width: 360px;
         box-sizing: border-box;
+        margin-left: 16px;
     }
 
     &__right {
         width: 652px;
         height: 334px;
         box-sizing: border-box;
+        margin-right: 16px;
         display: flex;
         flex-direction: column;
         gap: 22px;
@@ -1644,6 +1646,7 @@ summary::-webkit-details-marker {
     }
 
     &__benefits {
+        
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -1656,7 +1659,45 @@ summary::-webkit-details-marker {
 }
 
 
+@media (max-width: 1139px) {
+    // некрасивое перестроение между 1024 и 1140 было
+    .content-cart {
+        gap: 64px;
 
+        &__products {
+            width: 734px;
+            padding-top: 59px;
+            gap: 62px;
+        }
+
+        &__address {
+            padding-top: 0;
+            padding-bottom: 128px;
+            gap: 15px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .cart-buttons {
+        justify-content: center;
+        gap: 48px;
+        padding-bottom: 0;
+    }
+
+    .cart-product {
+        width:734px;
+
+        &__info {
+            width: 472px;
+        }
+    }
+
+    .checkout {
+        margin-top: 39px;
+        margin-bottom: 0px;
+    }
+}
 
 
 @media (max-width: 1024px) {
@@ -1762,11 +1803,110 @@ summary::-webkit-details-marker {
         }
     }
 
-
     .social-network__icons {
         padding-right: 32px;
     }
+
+    // дз 5 продвинутый - все 5 страниц для планшета
+    .registration {
+        gap: 22px;
+        padding-top: 40px;
+
+        &__right {
+            width: 354px;
+            font-size: 16px;
+        }
+
+        &__benef {  //
+            width: 312px;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .content-cart {
+        gap: 64px;
+
+        &__products {
+            width: 734px;
+            padding-top: 59px;
+            gap: 62px;
+        }
+
+        &__address {
+            padding-top: 0;
+            padding-bottom: 128px;
+            gap: 15px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .cart-buttons {
+        justify-content: center;
+        gap: 48px;
+        padding-bottom: 0;
+    }
+
+    .cart-product {
+        width:734px;
+
+        &__info {
+            width: 472px;
+        }
+    }
+
+    .checkout {
+        margin-top: 39px;
+        margin-bottom: 0px;
+    }
+
+    .filter-sort {
+        height: 81px;
+        gap: 30px;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        align-items: center;
+    }
+
+    .catalog-products {
+        &__box {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        }
+        &__pages {
+            height: 147px;
+            padding-top: 41px;
+            padding-bottom: 64px;
+        }
+    }
+
+    .carousel {
+        height: 624px;
+
+        &__photo {
+            height: 565px;
+        }
+    }
+
+    .descript {
+        height: 600px;
+
+        &__box {
+            top: 0;
+        }
+    }
+
+    .products-group {
+        grid-template-columns: repeat(2, 360px);
+        grid-template-rows: 1fr;
+        grid-auto-rows: 0;
+        overflow-y: hidden;
+        gap: 16px;
+        margin-bottom: 128px;
+    }
 }
+
 
 @media (max-width: 767px) {
     .center {
