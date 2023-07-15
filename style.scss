@@ -1893,7 +1893,8 @@ summary::-webkit-details-marker {
     }
 
     .carousel {
-        height: 624px;
+        // height: 624px;
+        max-height: 100%;
 
         &__photo {
             height: 565px;
