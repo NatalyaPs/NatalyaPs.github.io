@@ -72,12 +72,12 @@
         </section>
 
         <section class="registration center">
-            <div class="registration__left">
+            <form class="registration__left">
                 <div class="address">
                     <h3 class="address__heading">Your Name</h3>
                     <div class="address__input">
-                        <input class="address__item address__item_color" type="text" placeholder="First Name">
-                        <input class="address__item address__item_color" type="text" placeholder="Last Name">
+                        <input class="address__item address__item_color" type="text" placeholder="First Name" required>
+                        <input class="address__item address__item_color" type="text" placeholder="Last Name" required>
                     </div>
                 </div>
                 <div class="registration__gender">
@@ -89,14 +89,12 @@
                         <input type="radio" id="female" name="gender">
                         <label for="female">Female</label>
                     </div>
-                    
-                    
                 </div>
                 <div class="address">
                     <h3 class="address__heading">Login details</h3>
                     <div class="address__input">
-                        <input class="address__item address__item_color" type="email" placeholder="Email">
-                        <input class="address__item address__item_color" type="password" placeholder="Password">
+                        <input class="address__item address__item_color" type="email" placeholder="Email" required>
+                        <input class="address__item address__item_color" type="password" placeholder="Password" required>
                     </div>
                 </div>
                 <p class="registration__text">
@@ -108,9 +106,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z" fill="white"/>
                         </svg>
                 </button>
-
-                
-            </div>
+            </form>
             <div class="registration__right">
                 <div class="registration__title">LOYALTY HAS ITS PERKS</div>
                 <div class="registration__subtitle">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</div>
